@@ -5,7 +5,7 @@
     ../../modules/core/base.nix
   ];
 
-  networking.hostName = "puma";
+  networking.hostName = "lutra";
 
   system.stateVersion = "26.05";
 }
