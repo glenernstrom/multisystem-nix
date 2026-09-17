@@ -5,6 +5,7 @@
    ./hardware-configuration.nix
     ../../modules/core/base.nix
     ../../modules/desktop/gnome.nix
+    ../../modules/apps/flatpak.nix
   ];
 
   networking.hostName = "puma";
