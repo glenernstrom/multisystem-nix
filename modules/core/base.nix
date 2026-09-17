@@ -2,6 +2,10 @@
 
 {
 
+  imports = [
+   ./boot.nix
+   ./users.nix
+  ];
 
   nix.settings.experimental-features = [
     "nix-command"
