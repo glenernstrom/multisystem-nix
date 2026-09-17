@@ -3,9 +3,11 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
-  outputs = { nixpkgs, ... }:
+  outputs = { nixpkgs, nix-flatpak, ... }:
     let
       system = "x86_64-linux";
 
@@ -14,6 +16,7 @@
           inherit system;
 
           modules = [
+            nix-flatpak.nixosModules.nix-flatpak
             ./hosts/${hostname}
           ];
         };
