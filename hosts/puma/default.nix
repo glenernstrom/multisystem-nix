@@ -4,6 +4,7 @@
   imports = [
    ./hardware-configuration.nix
     ../../modules/core/base.nix
+    ../../modules/desktop/gnome.nix
   ];
 
   networking.hostName = "puma";
