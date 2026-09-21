@@ -9,4 +9,11 @@
     "wheel"
     ];
   };
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
+    users.glen = import ../../home/glen;
+ };
 }

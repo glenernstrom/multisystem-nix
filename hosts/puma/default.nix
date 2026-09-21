@@ -3,8 +3,10 @@
 {
   imports = [
    ./hardware-configuration.nix
+
     ../../modules/core/base.nix
     ../../modules/desktop/gnome.nix
+
     ../../modules/apps/flatpak.nix
     ../../modules/roles/workstation.nix
   ];
