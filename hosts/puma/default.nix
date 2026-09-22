@@ -2,8 +2,8 @@
 
 {
   imports = [
-   ./hardware-configuration.nix
-   ./printing.nix
+    ./hardware-configuration.nix
+    ./printing.nix
 
     ../../modules/hardware/intel-cpu.nix
 
@@ -18,7 +18,8 @@
     ../../modules/roles/workstation.nix
     ../../modules/roles/internet.nix
 
-  ];
+    ../../modules/services/tailscale.nix
+    ];
 
   networking.hostName = "puma";
 
