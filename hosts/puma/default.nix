@@ -3,12 +3,21 @@
 {
   imports = [
    ./hardware-configuration.nix
+   ./printing.nix
+
+    ../../modules/hardware/intel-cpu.nix
 
     ../../modules/core/base.nix
-    ../../modules/desktop/gnome.nix
 
-    ../../modules/apps/flatpak.nix
+    ../../modules/hardware/audio.nix
+    ../../modules/hardware/bluetooth.nix
+
+    ../../modules/desktop/gnome.nix
+    ../../modules/roles/flatpak.nix
+
     ../../modules/roles/workstation.nix
+    ../../modules/roles/internet.nix
+
   ];
 
   networking.hostName = "puma";

@@ -3,8 +3,8 @@
 {
 
   imports = [
-    ./ghostty
-    ./nvim
+    ./ghostty/ghostty.nix
+    ./nvim/neovim.nix
   ];
 
   home.username = "glen";
