@@ -13,7 +13,7 @@
     ../../modules/hardware/bluetooth.nix
 
     ../../modules/desktop/gnome.nix
-    ../../modules/roles/flatpak.nix
+    ../../modules/apps/flatpak.nix
 
     ../../modules/roles/workstation.nix
     ../../modules/roles/internet.nix
