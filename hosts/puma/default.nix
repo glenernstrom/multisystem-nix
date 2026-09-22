@@ -19,6 +19,7 @@
     ../../modules/roles/internet.nix
 
     ../../modules/services/tailscale.nix
+    ../../modules/services/syncthing.nix
     ];
 
   networking.hostName = "puma";
