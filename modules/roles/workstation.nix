@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     rsync
+    pcloud
   ];
 
   services.flatpak.packages = [

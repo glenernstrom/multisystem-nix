@@ -5,6 +5,7 @@
   imports = [
     ./ghostty/ghostty.nix
     ./nvim/neovim.nix
+    ./science.nix
   ];
 
   home.username = "glen";
