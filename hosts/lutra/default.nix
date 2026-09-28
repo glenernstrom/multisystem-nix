@@ -13,6 +13,8 @@
 
     ../../modules/roles/internet.nix
     ../../modules/roles/gaming.nix
+
+    ../../modules/apps/obs.nix
   ];
 
   networking.hostName = "lutra";
