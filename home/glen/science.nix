@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 let
   fiji = pkgs.writeShellApplication {
@@ -14,10 +14,23 @@ let
         "$HOME/Applications/Fiji/fiji" "$@"
     '';
   };
+
+  ape = pkgs.writeShellApplication {
+    name = "ape";
+
+    runtimeInputs = [
+      pkgs.tk
+    ];
+
+    text = ''
+      exec wish "$HOME/Applications/ApE/ApE.tcl" "$@"
+    '';
+  };
 in
 {
   home.packages = [
     fiji
+    ape
   ];
 
   xdg.desktopEntries.fiji = {
@@ -29,6 +42,19 @@ in
     categories = [
       "Graphics"
       "Science"
+    ];
+  };
+
+  xdg.desktopEntries.ape = {
+    name = "ApE";
+    genericName = "Plasmid Editor";
+    comment = "A plasmid Editor";
+    exec = "ape %F";
+    icon = "${config.home.homeDirectory}/Applications/ApE/Accessory Files/Icons and images/ApE_icon.png";
+    terminal = false;
+    categories = [
+      "Science"
+      "Education"
     ];
   };
 }
