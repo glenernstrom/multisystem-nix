@@ -12,7 +12,7 @@
     ../../modules/hardware/audio.nix
     ../../modules/hardware/bluetooth.nix
 
-    ../../modules/desktop/kde.nix
+    ../../modules/desktop/gnome.nix
     ../../modules/apps/flatpak.nix
 
     ../../modules/roles/workstation.nix
