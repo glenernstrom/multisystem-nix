@@ -4,23 +4,25 @@
   imports = [
     ./hardware-configuration.nix
     ./printing.nix
-
     ../../modules/hardware/intel-cpu.nix
-
     ../../modules/core/base.nix
-
     ../../modules/hardware/audio.nix
     ../../modules/hardware/bluetooth.nix
-
     ../../modules/desktop/gnome.nix
     ../../modules/apps/flatpak.nix
-
     ../../modules/roles/workstation.nix
-    ../../modules/roles/internet.nix
-
     ../../modules/services/tailscale.nix
     ../../modules/services/syncthing.nix
     ];
+
+    home-manager.users.glen = {
+      imports = [
+        ../../home/glen
+        ../../home/glen/profiles/common.nix
+        ../../home/glen/profiles/communications.nix
+        ../../home/glen/profiles/science.nix
+      ];
+    };
 
   networking.hostName = "puma";
 

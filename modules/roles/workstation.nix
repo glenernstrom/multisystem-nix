@@ -2,36 +2,46 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # maintenance
+    deja-dup
     rsync
+    # internet
     pcloud
-    libreoffice
+    addwater
+    fractal
+    # writing tools
     jabref
     pdfarranger
     censor
     joplin-desktop
+    # graphics
     gradia
     inkscape
     gimp
+    eyedopper
+    switcheroo
+    # reading
     foliate
-    kooha
-    shotcut
-    obs-studio
-    blanket
     newsflash
-    deja-dup
     cozy
+    # video
+    kooha
+    # utility
     addwater
-    xournalpp
-    shortwave
     impression
+    warp
+    # audio
+    blanket
+    gnome-podcasts
+    shortwave
+    # teaching
+    xournalpp
+    gnome-graphs
+    # productivity
     progress-tracker
     pomodoro
-    gnome-podcasts
     warp
-    switcheroo
-    eyedropper
     errands
-    gnome-graphs
   ];
 
   
