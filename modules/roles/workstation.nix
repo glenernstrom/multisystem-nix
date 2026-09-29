@@ -14,6 +14,9 @@
     pdfarranger
     censor
     joplin-desktop
+    texliveFull
+    texmaker
+    pandoc
     # graphics
     gradia
     inkscape
@@ -25,6 +28,7 @@
     newsflash
     cozy
     # video
+    shotcut
     kooha
     # utility
     addwater
