@@ -18,7 +18,7 @@
     gradia
     inkscape
     gimp
-    eyedopper
+    eyedropper
     switcheroo
     # reading
     foliate
