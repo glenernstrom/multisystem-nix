@@ -9,5 +9,6 @@
   home.packages = with pkgs; [
     firefox
     libreoffice
+    gnome-extension-manager
   ];
 }

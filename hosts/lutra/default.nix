@@ -13,6 +13,7 @@
     ../../modules/apps/flatpak.nix
     ../../modules/apps/obs.nix
     ../../modules/services/tailscale.nix
+    ../../modules/services/sunshine.nix
   ];
 
   home-manager.users.glen = {
