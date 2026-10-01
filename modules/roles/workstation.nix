@@ -37,6 +37,7 @@
     # teaching
     xournalpp
     gnome-graphs
+    parabolic
     # productivity
     progress-tracker
     pomodoro
