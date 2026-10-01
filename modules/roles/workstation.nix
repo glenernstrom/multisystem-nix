@@ -14,17 +14,21 @@
     pdfarranger
     censor
     joplin-desktop
+    texliveFull
+    texmaker
+    pandoc
     # graphics
     gradia
     inkscape
     gimp
-    eyedopper
+    eyedropper
     switcheroo
     # reading
     foliate
     newsflash
     cozy
     # video
+    shotcut
     kooha
     # utility
     addwater

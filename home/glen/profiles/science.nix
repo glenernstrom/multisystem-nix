@@ -28,30 +28,50 @@ let
   };
 in
 {
-  home.packages = [
+  home.packages = with pkgs; [
     fiji
     ape
+    nucleus
+    pymol
+    coulomb
   ];
 
-  xdg.desktopEntries.fiji = {
+  # Our working Fiji launcher.
+  # Give it a different desktop ID so Fiji's own launcher cannot shadow it.
+  xdg.desktopEntries.fiji-nix = {
     name = "Fiji";
     genericName = "Image Processing";
     comment = "Fiji Is Just ImageJ";
-    exec = "fiji %F";
+    exec = "${fiji}/bin/fiji %F";
     terminal = false;
+     icon = "${config.home.homeDirectory}/Applications/Fiji/images/icon.png";
     categories = [
       "Graphics"
       "Science"
     ];
   };
 
+  # Fiji creates its own ~/.local/share/applications/fiji.desktop,
+  # which attempts to launch the generic Linux binary directly.
+  # Hide that entry and let Home Manager replace it if necessary.
+  xdg.dataFile."applications/fiji.desktop" = {
+    force = true;
+    text = ''
+      [Desktop Entry]
+      Type=Application
+      Name=Fiji
+      Hidden=true
+    '';
+  };
+
   xdg.desktopEntries.ape = {
     name = "ApE";
     genericName = "Plasmid Editor";
     comment = "A plasmid Editor";
-    exec = "ape %F";
+    exec = "${ape}/bin/ape %F";
     icon = "${config.home.homeDirectory}/Applications/ApE/Accessory Files/Icons and images/ApE_icon.png";
     terminal = false;
+
     categories = [
       "Science"
       "Education"
