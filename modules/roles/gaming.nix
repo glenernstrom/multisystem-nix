@@ -9,5 +9,4 @@
 
   programs.gamemode.enable = true;
   services.gnome.games.enable = true;
-
 }

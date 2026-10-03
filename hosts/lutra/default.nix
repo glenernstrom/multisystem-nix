@@ -9,7 +9,7 @@
     ../../modules/hardware/bluetooth.nix
     ../../modules/roles/gaming.nix
     ../../modules/hardware/audio.nix
-    ../../modules/desktop/gnome.nix
+    ../../modules/desktop/kde.nix
     ../../modules/apps/flatpak.nix
     ../../modules/apps/obs.nix
     ../../modules/services/tailscale.nix
