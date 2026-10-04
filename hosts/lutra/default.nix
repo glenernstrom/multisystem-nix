@@ -12,6 +12,7 @@
     ../../modules/desktop/kde.nix
     ../../modules/apps/flatpak.nix
     ../../modules/apps/obs.nix
+    ../../modules/apps/firefox.nix
     ../../modules/services/tailscale.nix
     ../../modules/services/sunshine.nix
   ];
@@ -20,7 +21,6 @@
     imports = [
     ../../home/glen
     ../../home/glen/profiles/common.nix
-    ../../home/glen/profiles/communications.nix
     ];
   };
  
