@@ -2,8 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    element-desktop
-    mumble
+   kdePackages.kasts
   ];
 
 }

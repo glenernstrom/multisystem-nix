@@ -8,7 +8,7 @@
     ../../modules/core/base.nix
     ../../modules/hardware/audio.nix
     ../../modules/hardware/bluetooth.nix
-    ../../modules/desktop/gnome.nix
+    ../../modules/desktop/kde.nix
     ../../modules/apps/flatpak.nix
     ../../modules/roles/workstation.nix
     ../../modules/services/tailscale.nix
