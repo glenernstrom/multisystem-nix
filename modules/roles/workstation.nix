@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -7,47 +7,40 @@
     rsync
     # internet
     pcloud
-    addwater
-    fractal
     # writing tools
     jabref
-    pdfarranger
-    censor
     joplin-desktop
     texliveFull
-    texmaker
+    kile
     pandoc
     # graphics
-    gradia
     inkscape
     gimp
+    krita
+    pdfarranger
     eyedropper
-    switcheroo
     # reading
-    foliate
-    newsflash
-    cozy
+    kdePackages.akregator
+    kdePackages.arianna
     # video
     shotcut
-    kooha
+    kdePackages.kdenlive
     # utility
-    addwater
-    impression
-    warp
     # audio
-    blanket
-    gnome-podcasts
+    kdePackages.kasts
     shortwave
-    # teaching
-    xournalpp
-    gnome-graphs
     parabolic
-    # productivity
-    progress-tracker
-    pomodoro
-    warp
-    errands
+    # teaching
+    anki
+    kdePackages.kcalc
+    pymol
+    xournalpp
+    labplot
+    kdePackages.merkuro
+    kdePackages.kalzium
+    kdePackages.kirigami-addons
   ];
+
 
   
 }
