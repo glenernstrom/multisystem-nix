@@ -6,12 +6,22 @@
     ../nvim/neovim.nix
   ];
    
-  programs.bash.enable = true;
+  programs.bash = {
+    enable = true;
+  };
+
+  program fish = {
+    enable = true;
+  };
 
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
-    presets = [ "nerd-font-symbols" ];
+    enableFishInegration = true;
+
+    presets = [ 
+      "nerd-font-symbols" 
+    ];
   };
 
 
