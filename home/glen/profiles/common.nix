@@ -10,14 +10,14 @@
     enable = true;
   };
 
-  program fish = {
+  programs.fish = {
     enable = true;
   };
 
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
-    enableFishInegration = true;
+    enableFishIntegration = true;
 
     presets = [ 
       "nerd-font-symbols" 
