@@ -42,11 +42,6 @@
     xournalpp
     gnome-graphs
     parabolic
-    # productivity
-    progress-tracker
-    pomodoro
-    warp
-    errands
   ];
 
   
