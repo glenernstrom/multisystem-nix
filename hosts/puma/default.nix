@@ -9,6 +9,7 @@
     ../../modules/hardware/audio.nix
     ../../modules/hardware/bluetooth.nix
     ../../modules/desktop/kde.nix
+    ../../modules/desktop/fonts.nix
     ../../modules/apps/flatpak.nix
     ../../modules/roles/workstation.nix
     ../../modules/services/tailscale.nix

@@ -5,6 +5,15 @@
     ../ghostty/ghostty.nix
     ../nvim/neovim.nix
   ];
+   
+  programs.bash.enable = true;
+
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = true;
+    presets = [ "nerd-font-symbols" ];
+  };
+
 
   programs.firefox = {
     enable = true;
@@ -30,7 +39,9 @@
   };
 
   profiles.default = {
+    id = 0;
     isDefault = true;
+    path = "ied172pa.default-release";
 
      search = {
        force = true;

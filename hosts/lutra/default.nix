@@ -11,6 +11,7 @@
     ../../modules/roles/workstation.nix
     ../../modules/hardware/audio.nix
     ../../modules/desktop/kde.nix
+    ../../modules/desktop/fonts.nix
     ../../modules/apps/flatpak.nix
     ../../modules/apps/obs.nix
     ../../modules/apps/libreoffice.nix
