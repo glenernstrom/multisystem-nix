@@ -26,6 +26,11 @@
     shotcut
     kdePackages.kdenlive
     # utility
+    # office
+    libreoffice-qt
+    hunspell
+    hunspellDicts.en_US
+    hyphenDicts.en_US
     # audio
     kdePackages.kasts
     shortwave
