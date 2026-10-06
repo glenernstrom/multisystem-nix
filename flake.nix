@@ -17,7 +17,15 @@
     };
   };
 
-  outputs = { nixpkgs, nix-flatpak, home-manager, ... }:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nix-flatpak,
+      firefox-addons,
+      ...
+    }:
     let
       system = "x86_64-linux";
 
@@ -28,6 +36,13 @@
           modules = [
             nix-flatpak.nixosModules.nix-flatpak
             home-manager.nixosModules.home-manager
+
+            {
+              home-manager.extraSpecialArgs = {
+                inherit firefox-addons;
+              };
+            }
+
             ./hosts/${hostname}
           ];
         };

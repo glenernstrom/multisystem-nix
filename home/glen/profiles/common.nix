@@ -1,4 +1,4 @@
-{ pkgs, firefox-addons, ... }:
+{ config, pkgs, firefox-addons, ... }:
 
 {
   imports = [
@@ -29,16 +29,17 @@
        force = true;
        default = "ddg";
        privateDefault = "ddg";
+     };
 
-      settings = {
-        "extensions.autoDisableScopes" = 0;
-      };
-
-      extensions.packages =
+     extensions.packages =
         with firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
           ublock-origin
           proton-pass
         ];
+
+     settings = {
+        "extensions.autoDisableScopes" = 0;
+      };
     };
   };
 }
