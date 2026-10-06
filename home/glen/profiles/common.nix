@@ -13,6 +13,13 @@
     "en-US"
   ];
 
+
+  globalExtensions =
+    with firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+      ublock-origin
+      proton-pass
+    ];
+
   policies = {
     AppAutoUpdate = false;
     BackgroundAppUpdate = false;
@@ -31,15 +38,6 @@
        privateDefault = "ddg";
      };
 
-     extensions.packages =
-        with firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
-          ublock-origin
-          proton-pass
-        ];
-
-     settings = {
-        "extensions.autoDisableScopes" = 0;
-      };
     };
   };
 }
