@@ -46,6 +46,7 @@
     DisablePasswordReveal = true;
     DisableTelemetry = true;
     OfferToSaveLogins = false;
+    DontCheckDefaultBrowser = true;
   };
 
   profiles.default = {
