@@ -14,7 +14,6 @@
     ../../modules/apps/flatpak.nix
     ../../modules/apps/obs.nix
     ../../modules/apps/libreoffice.nix
-    ../../modules/apps/firefox.nix
     ../../modules/services/tailscale.nix
     ../../modules/services/sunshine.nix
   ];
