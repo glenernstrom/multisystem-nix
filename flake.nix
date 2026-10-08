@@ -38,10 +38,13 @@
             home-manager.nixosModules.home-manager
 
             {
+              home-manager.backupFileExtension = "hm-backup";
+
               home-manager.extraSpecialArgs = {
                 inherit firefox-addons;
               };
             }
+
 
             ./hosts/${hostname}
           ];

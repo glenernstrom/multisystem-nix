@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # Enable Plasma 
@@ -11,5 +11,12 @@
     # Optionally enable xserver
     # xserver.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    adwaita-icon-theme
+    hicolor-icon-theme
+  ];
+
+  programs.dconf.enable = true;
 }
 
