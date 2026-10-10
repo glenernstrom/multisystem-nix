@@ -24,6 +24,7 @@
     ];
   };
 
+  programs.chromium.enable = true;
 
   programs.firefox = {
     enable = true;
@@ -31,7 +32,6 @@
    languagePacks = [
     "en-US"
   ];
-
 
   globalExtensions =
     with firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [

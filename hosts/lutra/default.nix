@@ -7,6 +7,7 @@
     ../../modules/hardware/nvidia.nix
     ../../modules/hardware/amd-cpu.nix
     ../../modules/hardware/bluetooth.nix
+    ../../modules/hardware/utilities.nix
     ../../modules/roles/gaming.nix
     ../../modules/roles/workstation.nix
     ../../modules/hardware/audio.nix
