@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
  environment.systemPackages = with pkgs; [
@@ -7,7 +7,6 @@
   trash-cli
   meowfetch
   pay-respects
-
- ]
+ ];
 
 }
