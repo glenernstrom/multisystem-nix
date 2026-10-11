@@ -6,6 +6,11 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
    
+    meshmonitor = {
+      url = "github:gipsy/orange?dir=ops/meshmonitor";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+   
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,6 +29,7 @@
       home-manager,
       nix-flatpak,
       firefox-addons,
+      meshmonitor,
       ...
     }:
     let
@@ -43,6 +49,20 @@
               home-manager.extraSpecialArgs = {
                 inherit firefox-addons;
               };
+            }
+
+            meshmonitor.nixosModules.default
+            {
+              services.meshmonitor = {
+                enable = true;
+                meshtasticNodeIP = "192.168.1.100";
+                adminPassword = "secretpassword";
+                openFirewall = true;
+              };
+
+                meshmonitor.extraSpecialArgs = {
+                  inherit meshmonitor;
+                };
             }
 
 

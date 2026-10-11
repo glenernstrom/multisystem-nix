@@ -6,6 +6,7 @@
 
     packages = [
       "com.pojtinger.felicitas.Sessions"
+      "org.meshtastic.MeshtasticDesktop"
     ];
 
     update.auto = {
