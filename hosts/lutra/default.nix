@@ -27,6 +27,7 @@
     ../../home/glen
     ../../home/glen/profiles/common.nix
     ../../home/glen/profiles/communications.nix
+    ../../home/glen/profiles/science.nix
     ];
   };
  
