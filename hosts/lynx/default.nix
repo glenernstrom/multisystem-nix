@@ -17,6 +17,7 @@
     ../../modules/printing/office-printing.nix
     ../../modules/services/tailscale.nix
     ../../modules/services/syncthing.nix
+    ../../modules/desktop/multimedia.nix
   ];
 
   home-manager.users.glen = {
