@@ -3,7 +3,6 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./printing.nix
     ../../modules/hardware/intel-cpu.nix
     ../../modules/core/base.nix
     ../../modules/hardware/audio.nix
@@ -12,6 +11,7 @@
     ../../modules/desktop/fonts.nix
     ../../modules/apps/flatpak.nix
     ../../modules/roles/workstation.nix
+    ../../modules/printing/office-printing.nix
     ../../modules/services/tailscale.nix
     ../../modules/services/syncthing.nix
     ];
