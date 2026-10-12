@@ -61,8 +61,23 @@
     kdePackages.kaccounts-providers
     kdePackages.zanshin
     kdePackages.kdepim-addons
-
-
+    kdePackages.libksieve
+    kdePackages.ksanecore
+    kdePackages.ghostwriter
+    kdePackages.mailcommon
+    kdePackages.kaccounts-integration
+    kdePackages.messagelib
+    kdePackages.incidenceeditor
+    kdePackages.kdepim-runtime
+    kdePackages.akonadi-calendar
+    kdePackages.ksmtp
+    kdePackages.akonadi
+    kdePackages.akonadi-mime
+    kdePackages.akonadi-search
+    kdePackages.akonadi-contacts
+    kdePackages.akonadi-calendar
+    kdePackages.akonadi-import-wizard
+    kdePackages.akonadiconsole
   ];
 
 
