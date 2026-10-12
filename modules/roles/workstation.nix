@@ -44,6 +44,25 @@
     kdePackages.merkuro
     kdePackages.kalzium
     kdePackages.kirigami-addons
+    kdePackages.kcontacts
+    kdePackages.kontact
+    kdePackages.kmail
+    kdePackages.kmailtransport
+    kdePackages.kmail-account-wizard
+    kdePackages.calendarsupport
+    kdePackages.korganizer
+    kdePackages.pim-data-exporter
+    kdePackages.pimcommon
+    kdePackages.pim-sieve-editor
+    kdePackages.libkdepim
+    kdePackages.akonadi-search
+    kdePackages.kaddressbook
+    kdePackages.akonadi-calendar-tools
+    kdePackages.kaccounts-providers
+    kdePackages.zanshin
+    kdePackages.kdepim-addons
+
+
   ];
 
 
