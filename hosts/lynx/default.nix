@@ -18,6 +18,7 @@
     ../../modules/services/tailscale.nix
     ../../modules/services/syncthing.nix
     ../../modules/desktop/multimedia.nix
+    ../../modules/apps/moonlight.nix
   ];
 
   home-manager.users.glen = {
