@@ -1,6 +1,8 @@
 { ... }:
 
-program.moonlight-qt = {
-  enable = true;
-  capSysNice = true;
-};
+{
+  programs.moonlight-qt = {
+    enable = true;
+    capSysNice = true;
+  };
+}
