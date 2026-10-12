@@ -18,7 +18,6 @@
     gimp
     krita
     pdfarranger
-    eyedropper
     # reading
     kdePackages.akregator
     kdePackages.arianna
