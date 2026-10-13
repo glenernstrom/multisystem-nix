@@ -78,6 +78,8 @@
     kdePackages.akonadi-calendar
     kdePackages.akonadi-import-wizard
     kdePackages.akonadiconsole
+    kdePackages.zanshin
+    kdePackages.krunner
   ];
 
 
