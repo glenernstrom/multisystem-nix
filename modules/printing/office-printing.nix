@@ -37,5 +37,6 @@ in
 
   environment.systemPackages = with pkgs; [
     cups
+    kdePackages.print-manager
   ];
 }

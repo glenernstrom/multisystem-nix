@@ -80,6 +80,27 @@
     kdePackages.akonadiconsole
     kdePackages.zanshin
     kdePackages.krunner
+    kdePackages.eventviews
+    kdePackages.grantleetheme
+    kdePackages.libgravatar
+    kdePackages.kcalutils
+    kdePackages.kidentitymanagement
+    kdePackages.kimap
+    kdePackages.kitinerary
+    kdePackages.kmbox
+    kdePackages.kldap
+    kdePackages.kontactinterface
+    kdePackages.ksmtp
+    kdePackages.kpimtextedit
+    kdePackages.kpkpas
+    kdePackages.kpublictransport
+    kdePackages.libkleo
+    kdePackages.oxygen
+    kdePackages.oxygen-icons
+    kdePackages.oxygen-sounds
+    kdePackages.kdecoration
+    kdePackages.union
+
   ];
 
 
