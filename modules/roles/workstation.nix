@@ -25,6 +25,7 @@
     shotcut
     kdePackages.kdenlive
     # utility
+    poppler-utils
     # office
     libreoffice-qt
     hunspell
@@ -92,7 +93,7 @@
     kdePackages.kontactinterface
     kdePackages.ksmtp
     kdePackages.kpimtextedit
-    kdePackages.kpkpas
+    kdePackages.kpkpass
     kdePackages.kpublictransport
     kdePackages.libkleo
     kdePackages.oxygen
