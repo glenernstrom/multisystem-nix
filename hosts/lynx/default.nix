@@ -28,6 +28,7 @@
       ../../home/glen/profiles/common.nix
       ../../home/glen/profiles/communications.nix
       ../../home/glen/profiles/science.nix
+      ../../home/glen/profiles/everdo.nix
      ];
    };
 
