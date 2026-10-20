@@ -15,6 +15,7 @@
     ../../modules/services/tailscale.nix
     ../../modules/services/syncthing.nix
     ../../modules/desktop/multimedia.nix
+    ../../modules/desktop/appimage.nix
     ];
 
     home-manager.users.glen = {

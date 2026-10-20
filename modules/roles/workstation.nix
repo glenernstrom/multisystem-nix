@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
+
 {
+
+   # programs.kde-pim.kontact = true;
+
   environment.systemPackages = with pkgs; [
     # maintenance
     deja-dup

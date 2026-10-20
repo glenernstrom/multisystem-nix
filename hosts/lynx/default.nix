@@ -19,6 +19,7 @@
     ../../modules/services/syncthing.nix
     ../../modules/desktop/multimedia.nix
     ../../modules/apps/moonlight.nix
+    ../../modules/desktop/appimage.nix
   ];
 
   home-manager.users.glen = {
