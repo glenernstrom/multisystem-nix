@@ -38,6 +38,6 @@
 
 
   networking.hostName = "lynx";
-
+  networking.firewall.allowedTCPPorts = [ 11111 ];
   system.stateVersion = "26.05";
 }
