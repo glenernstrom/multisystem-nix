@@ -7,6 +7,7 @@
   trash-cli
   meowfetch
   pay-respects
+  ripgrep
  ];
 
 }
