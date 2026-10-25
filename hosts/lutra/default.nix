@@ -36,6 +36,6 @@
  
 
   networking.hostName = "lutra";
-#  networking.firewall.allowedTCPPorts = [ 11111 ];
+  networking.firewall.allowedTCPPorts = [ 11111 ];
   system.stateVersion = "26.05";
 }
