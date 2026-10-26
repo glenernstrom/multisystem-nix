@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    libreoffice-qt
+    libreoffice
     hunspell
     hunspellDicts.en_US
     hyphenDicts.en_US
