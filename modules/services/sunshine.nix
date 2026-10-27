@@ -1,9 +1,12 @@
 { pkgs, ... }:
 
 {
+
+# When we want Moonlight, systemctl --user start sunshine.service
+
   services.sunshine = {
     enable = true;
-    autoStart = true;
+    autoStart = false;
     openFirewall = true;
 
     # Start with KDE's Wayland capture rather than KMS.
