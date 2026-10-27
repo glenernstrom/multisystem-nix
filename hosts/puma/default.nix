@@ -10,7 +10,6 @@
     ../../modules/desktop/kde.nix
     ../../modules/desktop/fonts.nix
     ../../modules/apps/flatpak.nix
-    ../../modules/apps/libreoffice.nix
     ../../modules/roles/workstation.nix
     ../../modules/printing/office-printing.nix
     ../../modules/services/tailscale.nix
