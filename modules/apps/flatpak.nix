@@ -7,7 +7,6 @@
     packages = [
       "com.pojtinger.felicitas.Sessions"
       "org.meshtastic.MeshtasticDesktop"
-      "org.mozilla.firefox"
     ];
 
     update.auto = {

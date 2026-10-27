@@ -36,6 +36,11 @@
     parabolic
     # science
     labplot
+    # office
+    libreoffice-qt
+    hunspell
+    hunspellDicts.en_US
+    hyphenDicts.en_US
     # teaching
     anki
     kdePackages.kcalc
