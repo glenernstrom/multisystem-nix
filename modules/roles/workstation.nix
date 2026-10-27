@@ -34,6 +34,8 @@
     kdePackages.kasts
     shortwave
     parabolic
+    # science
+    labplot
     # teaching
     anki
     kdePackages.kcalc
