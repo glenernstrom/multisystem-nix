@@ -30,6 +30,7 @@
     kdePackages.kdenlive
     # utility
     poppler-utils
+    kdePackages.konqueror
     # audio
     kdePackages.kasts
     shortwave
