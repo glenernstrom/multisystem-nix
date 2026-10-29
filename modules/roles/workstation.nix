@@ -17,6 +17,9 @@
     texliveFull
     kile
     pandoc
+    kdePackages.marknote
+    kdePackages.ghostwriter
+    kdePackages.calligra
     # graphics
     inkscape
     gimp
@@ -30,6 +33,11 @@
     kdePackages.kdenlive
     # utility
     poppler-utils
+    lshw
+    pciutils
+    kdePackages.kweather
+    kdePackages.kweathercore
+    kdePackages.kcalc
     # audio
     kdePackages.kasts
     shortwave
@@ -43,13 +51,14 @@
     hyphenDicts.en_US
     # teaching
     anki
-    kdePackages.kcalc
-    pymol
-    nucleus
     xournalpp
+    # science
     labplot
-    kdePackages.merkuro
     kdePackages.kalzium
+    nucleus
+    pymol
+    # pim
+    kdePackages.merkuro
     kdePackages.kirigami-addons
     kdePackages.kcontacts
     kdePackages.kontact
@@ -102,6 +111,7 @@
     kdePackages.kpkpass
     kdePackages.kpublictransport
     kdePackages.libkleo
+    # interface
     kdePackages.oxygen
     kdePackages.oxygen-icons
     kdePackages.oxygen-sounds
