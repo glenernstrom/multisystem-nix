@@ -38,6 +38,7 @@
     kdePackages.kweather
     kdePackages.kweathercore
     kdePackages.kcalc
+    kdePackages.konqueror
     # audio
     kdePackages.kasts
     shortwave
