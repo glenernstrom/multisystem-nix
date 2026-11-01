@@ -31,6 +31,7 @@
     # video
     shotcut
     kdePackages.kdenlive
+    haruna
     # utility
     poppler-utils
     lshw
@@ -43,6 +44,8 @@
     kdePackages.kasts
     shortwave
     parabolic
+    kdePackages.juk
+    amarok
     # science
     labplot
     # office
@@ -110,7 +113,10 @@
     kdePackages.ksmtp
     kdePackages.kpimtextedit
     kdePackages.kpkpass
-    kdePackages.kpublictransport
+    kdePackages.kpu
+Practice quiz: quantal hypothesis of neurotransmitter release
+
+Practice quiz: conditional allelesblictransport
     kdePackages.libkleo
     # interface
     kdePackages.oxygen
