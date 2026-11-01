@@ -114,9 +114,6 @@
     kdePackages.kpimtextedit
     kdePackages.kpkpass
     kdePackages.kpu
-Practice quiz: quantal hypothesis of neurotransmitter release
-
-Practice quiz: conditional allelesblictransport
     kdePackages.libkleo
     # interface
     kdePackages.oxygen
