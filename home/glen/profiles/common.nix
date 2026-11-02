@@ -1,4 +1,4 @@
-{ config, pkgs, firefox-addons, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
@@ -24,42 +24,42 @@
     ];
   };
 
-  programs.chromium.enable = true;
+#  programs.chromium.enable = true;
 
-  programs.firefox = {
-    enable = true;
+#  programs.firefox = {
+#    enable = true;
 
-   languagePacks = [
-    "en-US"
-  ];
+#   languagePacks = [
+#    "en-US"
+#  ];
 
-  globalExtensions =
-    with firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
-      ublock-origin
-      proton-pass
-    ];
+#  globalExtensions =
+#    with firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+#      ublock-origin
+#      proton-pass
+#    ];
 
-  policies = {
-    AppAutoUpdate = false;
-    BackgroundAppUpdate = false;
-    DisableFirefoxScreenshots = true;
-    DisablePasswordReveal = true;
-    DisableTelemetry = true;
-    OfferToSaveLogins = false;
-    DontCheckDefaultBrowser = true;
-  };
+#  policies = {
+#    AppAutoUpdate = false;
+#    BackgroundAppUpdate = false;
+#    DisableFirefoxScreenshots = true;
+#    DisablePasswordReveal = true;
+#    DisableTelemetry = true;
+#    OfferToSaveLogins = false;
+#    DontCheckDefaultBrowser = true;
+#  };
 
-  profiles.default = {
-    id = 0;
-    isDefault = true;
-    path = "ied172pa.default-release";
+#  profiles.default = {
+#    id = 0;
+#    isDefault = true;
+#    path = "ied172pa.default-release";
 
-     search = {
-       force = true;
-       default = "ddg";
-       privateDefault = "ddg";
-     };
+#     search = {
+#       force = true;
+#       default = "ddg";
+#       privateDefault = "ddg";
+#     };
 
-    };
-  };
+#    };
+#  };
 }

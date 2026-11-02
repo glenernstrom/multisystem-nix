@@ -2,9 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    element-desktop
+   # element-desktop
     mumble
-    google-chrome
+   # google-chrome
   ];
 
 }

@@ -34,6 +34,7 @@ in
     nucleus
     pymol
     coulomb
+    labplot
   ];
 
   # Our working Fiji launcher.

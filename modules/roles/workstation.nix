@@ -1,17 +1,20 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
+# My workstation with creature comforts
 
 {
-
-   # programs.kde-pim.kontact = true;
-
   environment.systemPackages = with pkgs; [
-    # maintenance
-    deja-dup
+
+    # Maintenance
+    restic
     rsync
-    # internet
+    kdePackages.filelight
+    kdePackages.kbackup
+
+    # Cloud
     pcloud
-    # writing tools
+
+    # Writing
     jabref
     joplin-desktop
     texliveFull
@@ -19,111 +22,111 @@
     pandoc
     kdePackages.marknote
     kdePackages.ghostwriter
-    kdePackages.calligra
-    # graphics
+
+    # Graphics
     inkscape
     gimp
     krita
+    scribus
+
+    # PDF management
     pdfarranger
-    # reading
+
+    # Reading
     kdePackages.akregator
     kdePackages.arianna
-    # video
-    shotcut
-    kdePackages.kdenlive
-    haruna
-    # utility
-    poppler-utils
-    lshw
-    pciutils
-    kdePackages.kweather
-    kdePackages.kweathercore
-    kdePackages.kcalc
-    kdePackages.konqueror
-    # audio
-    kdePackages.kasts
-    shortwave
-    parabolic
-    kdePackages.juk
-    amarok
-    # science
-    labplot
-    # office
+
+    # Office
     libreoffice-qt
     hunspell
     hunspellDicts.en_US
     hyphenDicts.en_US
-    # teaching
+    kdePackages.calligra
+
+    # Video
+    shotcut
+    kdePackages.kdenlive
+    haruna
+    kdePackages.plasmatube
+
+    # Audio
+    kdePackages.kasts
+    kdePackages.juk
+    shortwave
+    parabolic
+    amarok
+
+    # Utilities
+    poppler-utils
+    lshw
+    kdePackages.kweather
+    kdePackages.kcalc
+    kdePackages.kleopatra
+    kdePackages.partitionmanager
+    kdePackages.isoimagewriter
+    kdePackages.kcolorchooser
+    kdePackages.kcharselect
+    kdePackages.khelpcenter
+    kdePackages.skanpage
+    kdePackages.kalarm
+    kdePackages.kteatime
+    kdePackages.francis
+
+    # Internet
+    kdePackages.konqueror
+    kdePackages.falkon
+    element-desktop
+    chromium
+    protonmail-bridge
+    protonmail-bridge-gui
+
+    # Security
+    proton-pass
+    bitwarden-desktop
+    bitwarden-cli
+
+    # Teaching
     anki
     xournalpp
-    # science
+
+    # Science
     labplot
-    kdePackages.kalzium
     nucleus
     pymol
-    # pim
-    kdePackages.merkuro
-    kdePackages.kirigami-addons
-    kdePackages.kcontacts
+    kstars
+    kdePackages.kalzium
+    kdePackages.kmplot
+    kdePackages.marble
+
+    # PIM / mail / calendar / contacts
+    protonmail-desktop
+
     kdePackages.kontact
     kdePackages.kmail
-    kdePackages.kmailtransport
     kdePackages.kmail-account-wizard
-    kdePackages.calendarsupport
-    kdePackages.korganizer
-    kdePackages.pim-data-exporter
-    kdePackages.pimcommon
-    kdePackages.pim-sieve-editor
-    kdePackages.libkdepim
-    kdePackages.akonadi-search
     kdePackages.kaddressbook
-    kdePackages.akonadi-calendar-tools
-    kdePackages.kaccounts-providers
+    kdePackages.korganizer
     kdePackages.zanshin
-    kdePackages.kdepim-addons
-    kdePackages.libksieve
-    kdePackages.ksanecore
-    kdePackages.ghostwriter
-    kdePackages.mailcommon
-    kdePackages.kaccounts-integration
-    kdePackages.messagelib
-    kdePackages.incidenceeditor
-    kdePackages.kdepim-runtime
-    kdePackages.akonadi-calendar
-    kdePackages.ksmtp
-    kdePackages.akonadi
-    kdePackages.akonadi-mime
-    kdePackages.akonadi-search
-    kdePackages.akonadi-contacts
-    kdePackages.akonadi-calendar
-    kdePackages.akonadi-import-wizard
+    kdePackages.merkuro
+
+    # Useful PIM utilities / add-ons
     kdePackages.akonadiconsole
-    kdePackages.zanshin
-    kdePackages.krunner
-    kdePackages.eventviews
-    kdePackages.grantleetheme
-    kdePackages.libgravatar
-    kdePackages.kcalutils
-    kdePackages.kidentitymanagement
-    kdePackages.kimap
-    kdePackages.kitinerary
-    kdePackages.kmbox
-    kdePackages.kldap
-    kdePackages.kontactinterface
-    kdePackages.ksmtp
-    kdePackages.kpimtextedit
-    kdePackages.kpkpass
-    kdePackages.kpu
-    kdePackages.libkleo
-    # interface
-    kdePackages.oxygen
-    kdePackages.oxygen-icons
-    kdePackages.oxygen-sounds
-    kdePackages.kdecoration
-    kdePackages.union
+    kdePackages.akonadi-import-wizard
+    kdePackages.pim-data-exporter
+    kdePackages.pim-sieve-editor
+    kdePackages.kdepim-addons
+    kdePackages.kdepim-runtime
 
+    # Games
+    kdePackages.ksudoku
+    kdePackages.kpat
+    kdePackages.kmines
+    kdePackages.klines
+    kdePackages.kbreakout
+    kdePackages.kiriki
+
+    # Code
+    vscodium
+    kdePackages.kdevelop
   ];
-
-
-  
 }

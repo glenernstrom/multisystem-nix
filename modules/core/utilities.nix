@@ -8,6 +8,7 @@
   meowfetch
   pay-respects
   ripgrep
+  pciutils
  ];
 
 }
