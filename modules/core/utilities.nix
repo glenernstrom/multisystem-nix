@@ -3,12 +3,13 @@
 {
  environment.systemPackages = with pkgs; [
   usbutils
-  tldr
-  trash-cli
   meowfetch
   pay-respects
   ripgrep
   pciutils
+  restic
+  poppler-utils
+  lshw
  ];
 
 }

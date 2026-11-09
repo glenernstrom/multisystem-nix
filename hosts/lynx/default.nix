@@ -21,17 +21,6 @@
     ../../modules/desktop/appimage.nix
   ];
 
-  home-manager.users.glen = {
-    imports = [
-      ../../home
-      ../../home/default.nix
-      ../../home/common.nix
-      ../../home/communications.nix
-      ../../home/science.nix
-      ../../home/everdo.nix
-     ];
-   };
-
   swapDevices = [ 
     { device = "/swap/swapfile"; }
   ];
@@ -43,7 +32,7 @@
 
   networking.firewall.allowedTCPPorts = [ 
   11111
-  22 ];
+  ];
 
   system.stateVersion = "26.05";
 }

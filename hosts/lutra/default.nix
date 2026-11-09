@@ -24,18 +24,6 @@
 
   ];
 
-  home-manager.users.glen = {
-    imports = [
-    ../../home
-    ../../home/default.nix
-    ../../home/communications.nix
-    ../../home/gaming.nix
-    ../../home/science.nix
-    ../../home/everdo.nix
-    ../../home/common.nix
-    ];
-  };
- 
 
   networking.hostName = "lutra";
   

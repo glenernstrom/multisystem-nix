@@ -35,6 +35,11 @@ in
     pymol
     coulomb
     labplot
+    kdePackages.kmplot
+    kdePackages.kcalc
+    kdePackages.kalzium
+    kdePackages.marble
+    kstars
   ];
 
   # Our working Fiji launcher.

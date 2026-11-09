@@ -19,17 +19,6 @@
     ../../modules/core/utilities.nix
     ];
 
-    home-manager.users.glen = {
-      imports = [
-        ../../home
-        ../../home/default.nix
-        ../../home/common.nix
-        ../../home/communications.nix
-        ../../home/science.nix
-        ../../home/everdo.nix
-      ];
-    };
-
   networking.hostName = "puma";
 
   # Encrypted swap
