@@ -21,11 +21,12 @@
 
     home-manager.users.glen = {
       imports = [
-        ../../home/glen
-        ../../home/glen/profiles/common.nix
-        ../../home/glen/profiles/communications.nix
-        ../../home/glen/profiles/science.nix
-        ../../home/glen/profiles/everdo.nix
+        ../../home
+        ../../home/default.nix
+        ../../home/common.nix
+        ../../home/communications.nix
+        ../../home/science.nix
+        ../../home/everdo.nix
       ];
     };
 
