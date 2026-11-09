@@ -15,6 +15,6 @@
     useGlobalPkgs = true;
     useUserPackages = true;
 
-    users.glen = import ../../home/glen;
+    users.glen = import ../../home;
  };
 }

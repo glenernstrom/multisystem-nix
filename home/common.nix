@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ../ghostty/ghostty.nix
-    ../nvim/neovim.nix
+    ./ghostty/ghostty.nix
+    ./nvim/neovim.nix
   ];
    
   programs.bash = {

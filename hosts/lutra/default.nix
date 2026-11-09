@@ -1,5 +1,6 @@
 { ... }:
 
+
 {
   imports = [
     ./hardware-configuration.nix
@@ -25,16 +26,25 @@
 
   home-manager.users.glen = {
     imports = [
-    ../../home/glen
-    ../../home/glen/profiles/common.nix
-    ../../home/glen/profiles/communications.nix
-    ../../home/glen/profiles/science.nix
-    ../../home/glen/profiles/everdo.nix
+    ../../home
+    ../../home/default.nix
+    ../../home/communications.nix
+    ../../home/gaming.nix
+    ../../home/science.nix
+    ../../home/everdo.nix
+    ../../home/common.nix
     ];
   };
  
 
   networking.hostName = "lutra";
-  networking.firewall.allowedTCPPorts = [ 11111 ];
+  
+  services.openssh.enable = true;
+  
+  networking.firewall.allowedTCPPorts = [
+    22 
+    11111
+  ];
+  
   system.stateVersion = "26.05";
 }
