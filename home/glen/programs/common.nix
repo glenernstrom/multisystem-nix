@@ -16,7 +16,7 @@
     hunspellDicts.en_US
     hyphenDicts.en_US
     haruna
-    elisa
+    kdePackages.elisa
     kdePackages.filelight
     kdePackages.ghostwriter
     kdePackages.arianna
