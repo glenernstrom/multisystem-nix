@@ -22,10 +22,5 @@
       X11Forwarding = false;
     };
   };
-
-  # Allow SSH through Tailscale.
-  networking.firewall.interfaces."tailscale0".allowedTCPPorts = [
-    22
-  ];
 }
 

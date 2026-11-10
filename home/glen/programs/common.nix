@@ -23,7 +23,7 @@
     kdePackages.akregator
     kdePackages.kweather
     kdePackages.skanpage
-    kdePackges.korganizer
+    kdePackages.korganizer
     kdePackages.kaddressbook
   ];
 
